@@ -5,7 +5,7 @@ import mimetypes
 import os
 
 # Lade .env-Datei
-load_dotenv(dotenv_path="Katzastrophentoken")
+# <- Hash entfernen, wenn BOT_TOKEN lokal liegt // load_dotenv(dotenv_path="Katzastrophentoken")
 
 # Token abrufen aus .env-Datei, liegt ebenso bei Replit!!!  
 TOKEN = os.getenv("BOT_TOKEN")
