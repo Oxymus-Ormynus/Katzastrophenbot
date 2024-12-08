@@ -1,8 +1,8 @@
 import discord
 from discord.ext import commands
 # Siehe Zeile 7-8 // from dotenv import load_dotenv
-import mimetypes
 import os
+import mimetypes
 
 # Lade .env-Datei
 # <- Hash entfernen, wenn BOT_TOKEN lokal liegt // load_dotenv(dotenv_path="Katzastrophentoken")
