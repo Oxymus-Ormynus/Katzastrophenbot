@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from dotenv import load_dotenv
+# Siehe Zeile 7-8 // from dotenv import load_dotenv
 import mimetypes
 import os
 
