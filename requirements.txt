@@ -1,0 +1,2 @@
+Katzastrophenbot MIME_Type_Blocker_Bot.py
+python-dotenv
