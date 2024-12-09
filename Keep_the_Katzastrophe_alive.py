@@ -10,7 +10,7 @@ def home():
     return "Katzastrophe is running!" # Angezeigte Nachricht bei jedem Ping
     
 # Flask-Server starten
-def run ():
+def run():
     app.run(host='0.0.0.0', port=8080)
  
 # Server im separaten Thread ausführen
