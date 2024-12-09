@@ -58,10 +58,9 @@ async def on_message(message):
             try:
                 await message.delete()
                 await message.channel.send(
-                    f"{message.author.mention}, Achtung - es droht eine Katzastrophe! :Panic: Dieser Dateityp ist leider nicht erlaubt! Miau :Sus:"
-                )
+                    f"{message.author.mention}, Achtung - es droht eine Katzastrophe! :Panic: Dieser Dateityp ist leider nicht erlaubt! Miau :Sus:")
             except discord.Forbidden:
-                print("Achtung, Katzastrophe! :Panic: Anhang nicht ausführen! Berechtigung zum Löschen der Nachricht von {message.author.name} fehlt. :Sus:")
+                print(f"Achtung, Katzastrophe! :Panic: Anhang nicht ausführen! Berechtigung zum Löschen der Nachricht von {message.author.name} fehlt. :Sus:")
             break
 
 # Starte Bot
