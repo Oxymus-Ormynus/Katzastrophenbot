@@ -1,9 +1,9 @@
 import discord
-from keep_alive import keep_alive
 from discord.ext import commands
 # Siehe Zeile 7-8 // from dotenv import load_dotenv
 import os
 import mimetypes
+from keep_alive import keep_alive
 
 # Lade .env-Datei
 # <- Hash entfernen, wenn BOT_TOKEN lokal liegt // load_dotenv(dotenv_path="Katzastrophentoken")
