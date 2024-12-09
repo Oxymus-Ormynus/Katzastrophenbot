@@ -1,4 +1,5 @@
 import discord
+from keep_alive import keep_alive
 from discord.ext import commands
 # Siehe Zeile 7-8 // from dotenv import load_dotenv
 import os
@@ -63,8 +64,9 @@ async def on_message(message):
                 print(f"Achtung, Katzastrophe! :Panic: Anhang nicht ausführen! Berechtigung zum Löschen der Nachricht von {message.author.name} fehlt. :Sus:")
             break
 
-# Starte Bot
+# Starte Flask-Server, dann Bot
 if TOKEN:
+    keep_alive()
     bot.run(TOKEN)
 else:
     print("Error: BOT_TOKEN nicht gefunden. Überprüfe die Katzastrophentoken-Datei.")
